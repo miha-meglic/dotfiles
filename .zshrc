@@ -10,7 +10,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 # Autocomplete (wip)
-zstyle :compinstall filename '/home/miha/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz compinit
 compinit
 
