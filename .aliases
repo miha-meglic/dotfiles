@@ -1,6 +1,9 @@
 alias ls="ls --color=auto -l"
 alias ll="ls -a"
 
+alias df="df -h"
+alias du="du -h"
+
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"
