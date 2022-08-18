@@ -1,0 +1,44 @@
+---
+# The editor to use with 'cheat -e <sheet>'. Defaults to $EDITOR or $VISUAL.
+# editor: /usr/bin/vim
+
+# Should 'cheat' always colorize output?
+colorize: true
+
+# Options are available here:
+#   https://github.com/alecthomas/chroma/tree/master/styles
+style: monokai
+
+# Which 'chroma' "formatter" should be applied?
+# One of: "terminal", "terminal256", "terminal16m"
+formatter: terminal256
+
+# Through which pager should output be piped?
+# 'less -FRX' is recommended on Unix systems
+# 'more' is recommended on Windows
+pager: 'less -FRX'
+
+cheatpaths:
+  # Paths that come earlier are considered to be the most "global", and will
+  # thus be overridden by more local cheatsheets. That being the case, you
+  # should probably list community cheatsheets first.
+  #
+  # Community cheatsheets must be installed separately, though you may have
+  # downloaded them automatically when installing 'cheat'. If not, you may
+  # download them here: https://github.com/cheat/cheatsheets
+  
+  - name: community
+    path: ~/.config/cheat/cheatsheets/community
+    tags: [ community ]
+    readonly: true
+    
+  - name: personal
+    path: ~/.config/cheat/cheatsheets/personal
+    tags: [ personal ]
+    readonly: false
+
+  # While it requires no configuration here, it's also worth noting that
+  # 'cheat' will automatically append directories named '.cheat' within the
+  # current working directory to the 'cheatpath'. This can be very useful if
+  # you'd like to closely associate cheatsheets with, for example, a directory
+  # containing source code.

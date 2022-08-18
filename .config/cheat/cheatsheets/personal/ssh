@@ -1,0 +1,14 @@
+---
+tags: [ ssh ]
+---
+# To ssh via pem file (which normally needs 0600 permissions):
+ssh -i <pemfile> <user>@<host>
+
+# To connect on a non-standard port:
+ssh -p <port> <user>@<host>
+
+# Open a tunnel through a proxy:
+#   -f    Requests ssh to go to background
+#   -L    Tunnel
+#   -N    Do not execute a remote command
+ssh -f -L -N <local_port>:<remote_host>:<remote_port> <user>@<host>
