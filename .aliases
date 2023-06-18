@@ -1,6 +1,9 @@
 alias ls="ls --color=auto -l"
 alias ll="ls -a"
 
+alias ip="ip -c"
+alias ips="ip -br address"
+
 alias df="df -h"
 alias du="du -h"
 
@@ -8,6 +11,5 @@ alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias diff="diff --color=auto"
-alias ip="ip --color=auto"
 
 alias cls="clear"
